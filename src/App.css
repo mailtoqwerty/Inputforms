@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navpadding{
+  padding :1%;
+  border-spacing: 15px;
+  margin-top:1 px;
+  color: aliceblue;
+ }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.background  { 
+  background-image: url("Export.jpeg ") ;
+  background-repeat: no-repeat;
+  background-color: hsl(0, 45%, 94%);
+  background-size: cover;
+  background-position:0%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.formtransparent{
+  position:relative;
+  width:500px;
+  height:750px;
+  background: transparent;
+  border-color:rgba(237, 89, 9, 0.989);
+  backdrop-filter: blur(20px);
+  display: flexbox;
+}
+
+.input-field label{
+  position :absolute;
+  top:50%;
+  left:15px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: rgb(233, 20, 20);
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.input-field{
+  position: relative;
+  width: 100%;
+  height: 50px; 
+  border-bottom: 2px solid black;
+  margin:30px 0;
+
+}
+.input-field input{
+  width:100%;
+  height: 100%;
+  background: transparent;
+  background: none;
+  outline: none;
+  border:none;
+  color: antiquewhite; 
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label{
+  top:-5px ;
+}
+
+
